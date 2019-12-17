@@ -12,11 +12,11 @@ Parkovací senzory s využitím Multi function shieldu a ultrazvukového(ých) s
 ## Použité komponenty
 | **Součástka** | **Popis** |
 | ------------- | --------- |
-| ATMEGA328P | Arduino Nano |
-| 3x 8bitový posuvný registr | 74HC595N |
-| 1x 4 Sedmisegmentový display | Common Cathode |
-| Bzučák | |
-| Senzor vzdálenosti | SR04 |
-| 8x LED | 3x zelená, 3x žlutá, 2x červená |
-| Tranzistor MOSFET | |
-| Propojky | Různé velikosti a barvy |
+| ATMEGA328P | Arduino Nano 
+| 3x 8bitový posuvný registr | 74HC595N 
+| 1x 4 Sedmisegmentový display | Common Cathode 
+| Bzučák | 
+| Senzor vzdálenosti | SR04 
+| 8x LED | 3x zelená, 3x žlutá, 2x červená 
+| Tranzistor MOSFET | 
+| Propojky | Různé velikosti a barvy 
