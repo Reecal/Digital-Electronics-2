@@ -1,4 +1,5 @@
-# Digital-Electronics-2 | Radim Dvořák 186800
+# Digital-Electronics-2 
+## Radim Dvořák 186800 & Jiří Šťásek 195447 
 
 [![university](https://img.shields.io/badge/university-Brno%20University%20of%20Technology-red.svg)](https://www.vutbr.cz/en/)
 [![faculty](https://img.shields.io/badge/faculty-Faculty%20of%20Electrical%20Engineering%20and%20Communication-blue.svg)](https://www.fekt.vutbr.cz/)
@@ -19,10 +20,12 @@ Parkovací senzory s využitím Multi function shieldu a ultrazvukového(ých) s
 | Bzučák | 
 | Senzor vzdálenosti | HC-SR04 
 | 8x LED | 3x zelená, 3x žlutá, 2x červená 
-| Tranzistor MOSFET | 
+| Tranzistor MOSFET | N-MOS IRF740 TO-220
 | Propojky | Různé velikosti a barvy 
 
 ## Schéma zapojení
+
+![Zapojení](https://i.imgur.com/NpZPkXZ.jpg)
 
 ## Realizace
 ### Hardware : 
