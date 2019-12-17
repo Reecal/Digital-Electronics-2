@@ -26,15 +26,18 @@ Parkovací senzory s využitím Multi function shieldu a ultrazvukového(ých) s
 ## Realizace
 HW : 
 Pro komunikaci se senzorem využíváme 2 piny portu B.
+
 | **Pin senzoru** | **Pin mikrokontroléru** | **Pin na desce (Arduinu)** |
 | --------------- | ----------------------- | -------------------------- |
 | Trigger | PORTB1 | D9
 | Echo | PORTB0 | D8
+
 Pro aktivování senzoru je nutné přivést na Trigger pin 10 mikrosekundový pulz. Senzor potom odpovídá na pinu Echo zvednutím napěťové úrovně do logické úrovně HIGH, kterou poté udržuje po dobu odpovídající vzdálenosti, kterou změřil. Změříme-li tuto dobu, můžeme vzdálenost vypočítat podle stanovené rovnice v datasheetu senzoru.
 Doporučená hranice pro buzení senzoru je dle datasheetu minimálně 60 mikrosekund.
 
 V našem projektu jsme využili 3 posuvné registry pro adresaci sedmisegmentových displejů a také na ovládání indikačních LED diod.
 Pro komunikaci s posuvnými registry využíváme port D
+
 | **Pin registru** | **Pin mikrokontroléru** | **Pin na desce (Arduinu)** |
 | ---------------- | ------------------------| -------------------------- |
 | Data Pin | PORTD4 | D4
