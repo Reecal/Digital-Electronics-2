@@ -24,7 +24,7 @@ Parkovací senzory s využitím Multi function shieldu a ultrazvukového(ých) s
 ## Schéma zapojení
 
 ## Realizace
-HW : 
+### HW : 
 Pro komunikaci se senzorem využíváme 2 piny portu B.
 
 | **Pin senzoru** | **Pin mikrokontroléru** | **Pin na desce (Arduinu)** |
@@ -43,3 +43,9 @@ Pro komunikaci s posuvnými registry využíváme port D
 | Data Pin | PORTD4 | D4
 | Clock Pin | PORTD5 | D5
 | Latch Pin | PORTD6 | D6
+
+První posuvný registr je spojený s vývody displeje pro výběr displeje, druhý posuvný registr je připojen k jednotlivým segmentům displeje. Třetí registr ovládá osmici LED diod viditelně připojených na jeho výstupy.
+
+Pro generaci signálu pro zvukovou indikaci využijeme pin D11, což je pin na jehož výstupu je připojen výstup vnitřního časovače OC2A.
+
+### SW:
