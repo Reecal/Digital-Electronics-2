@@ -9,7 +9,7 @@
 ## Zadání projektu
 Parkovací senzory s využitím Multi function shieldu a ultrazvukového(ých) senzoru(ů) HC-SR04. Frekvence pípání podle vzdálenosti, zobrazení vzdálenosti na 7segmentovém displeji v centimetrech, indikace vzdálenosti na LED (daleko žádná, blízko všechny LED, apod.). Uvažovat nastavení limitů vzdálenosti pomoci interaktivní konzole přes UART.
 
-## Použité komponenty
+## Použité součástky
 | **Součástka** | **Popis** |
 | ------------- | --------- |
 | ATMEGA328P | Arduino Nano 
@@ -72,3 +72,15 @@ Při každé změně hodnoty je tato hodnota uložena do vnitřní paměti (EEPR
 
 ##### Kontrolní jednotka
 
+Časovač je nastaven do CTC módu (Clear Timer on Compare) na hodnotu 1 ms. Tento interrupt se pouští každou milisekundu a je rozdělen do bloků dle funkce.
+  1) Blok pro aktualizaci displeje. Kontroluje, počet přerušení tak, aby byla hodnota zobrazovaného displeje inkrementována po 4 ms. Spouští odesílání dat do posuvných registrů.
+  2) Blok pro spuštění měření. Při každém přerušení kontroluje aktuální časovou hodnotu od posledního spuštění. Pokud je hodnota vyšší nebo rovná, spouští další měření.
+  3) Kontrola časování zvukových projevů zařízení. V závislosti na vzdálenosti spouští a zastavuje a spouští bzučení.
+  
+##### Měřící systém
+
+Po vyslání budícího signálu je Echo pin vytažen do úrovně HIGH senzorem, což způsobí přerušení. V tomto přerušení spouštíme měření času. Doba, po jakou je signál na úrovni HIGH je přímo odvozená ze vzdálenosti. Když senzor opět stáhne pin na úroveň LOW, vyvolá to další přerušení, ve kterém zastavíme měření a vypočítáme vzdálenost podle vzorce.
+```bash
+Formula: uS / 58 = centimeters or uS
+```
+Tento proces se neustále opakuje.
