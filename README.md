@@ -6,6 +6,7 @@
 
 # Semestrální projekt
 #### Radim Dvořák 186800 & Jiří Šťásek 195447
+#### Pozn. Kód byl psán v programu ATMEL Studio 7.0. Může proto být nutné upravení souboru Makefile tak, aby vyhovoval Vám.
 ## Zadání projektu
 Parkovací senzory s využitím Multi function shieldu a ultrazvukového(ých) senzoru(ů) HC-SR04. Frekvence pípání podle vzdálenosti, zobrazení vzdálenosti na 7segmentovém displeji v centimetrech, indikace vzdálenosti na LED (daleko žádná, blízko všechny LED, apod.). Uvažovat nastavení limitů vzdálenosti pomoci interaktivní konzole přes UART.
 
