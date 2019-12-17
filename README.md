@@ -81,6 +81,6 @@ Při každé změně hodnoty je tato hodnota uložena do vnitřní paměti (EEPR
 
 Po vyslání budícího signálu je Echo pin vytažen do úrovně HIGH senzorem, což způsobí přerušení. V tomto přerušení spouštíme měření času. Doba, po jakou je signál na úrovni HIGH je přímo odvozená ze vzdálenosti. Když senzor opět stáhne pin na úroveň LOW, vyvolá to další přerušení, ve kterém zastavíme měření a vypočítáme vzdálenost podle vzorce.
 ```bash
-Formula: uS / 58 = centimeters or uS
+Formula: uS / 58 = centimeters
 ```
 Tento proces se neustále opakuje.
