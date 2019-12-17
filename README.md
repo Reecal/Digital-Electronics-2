@@ -5,7 +5,7 @@
 
 
 # Semestrální projekt
-#### Radim Dvořák 186800 & Jiří Šťásek 
+#### Radim Dvořák 186800 & Jiří Šťásek 195447
 ## Zadání projektu
 Parkovací senzory s využitím Multi function shieldu a ultrazvukového(ých) senzoru(ů) HC-SR04. Frekvence pípání podle vzdálenosti, zobrazení vzdálenosti na 7segmentovém displeji v centimetrech, indikace vzdálenosti na LED (daleko žádná, blízko všechny LED, apod.). Uvažovat nastavení limitů vzdálenosti pomoci interaktivní konzole přes UART.
 
@@ -59,3 +59,16 @@ Pro generaci signálu pro zvukovou indikaci využijeme pin D11, což je pin na j
 | Timer/Counter 1 | Využit jako počítadlo času pro určení vzdálenosti.
 | Timer/Counter 2 | Generace signálu pro buzzer
 | Pin Change Interrupt 0 | Na základě změny hladiny signálu řídí průběh měření vzdálenosti
+
+##### Rozhraní UART
+
+Ve hlavní smyčce bude probíhat komunikace s uživatelem přes rozhraní UART. Uživatel má následující možnosti: 
+  1) Změnit nastavení minimální a maximální vzdálenosti, kdy zařízení zvukově a vizuelně (LED diody) upozorňuje uživatele na vzdálenost překážky.
+  2) Změnit rychlost buzení senzoru v milisekundách. Minimálně však 60 ms
+  3) Změnit frekvenci časovače OC2A a tím pádem změnit tón buzzeru na přednastavené hodnoty.
+  4) Vypnout zvukovou signalizaci
+  
+Při každé změně hodnoty je tato hodnota uložena do vnitřní paměti (EEPROM) mikrokontroléru, takže nastavení je přeneseno i po odpojení napájecího zdroje.
+
+##### Kontrolní jednotka
+
