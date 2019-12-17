@@ -24,7 +24,7 @@ Parkovací senzory s využitím Multi function shieldu a ultrazvukového(ých) s
 ## Schéma zapojení
 
 ## Realizace
-### HW : 
+### Hardware : 
 Pro komunikaci se senzorem využíváme 2 piny portu B.
 
 | **Pin senzoru** | **Pin mikrokontroléru** | **Pin na desce (Arduinu)** |
@@ -48,4 +48,14 @@ První posuvný registr je spojený s vývody displeje pro výběr displeje, dru
 
 Pro generaci signálu pro zvukovou indikaci využijeme pin D11, což je pin na jehož výstupu je připojen výstup vnitřního časovače OC2A.
 
-### SW:
+### Software:
+
+#### Rozvržení programu
+
+| **Blok** | **Popis funkce** |
+| -------- | ---------------- |
+| Hlavní smyčka | Obsluha uživatelského prosředí pomocí UART 
+| Timer/Counter 0 | Kontrolní jednotka. Kontroluje spínání senzoru, aktualizace displeje a LED diod. Časuje zvukové projevy zařízení
+| Timer/Counter 1 | Využit jako počítadlo času pro určení vzdálenosti.
+| Timer/Counter 2 | Generace signálu pro buzzer
+| Pin Change Interrupt 0 | Na základě změny hladiny signálu řídí průběh měření vzdálenosti
