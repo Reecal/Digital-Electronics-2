@@ -88,3 +88,8 @@ Po vyslání budícího signálu je Echo pin vytažen do úrovně HIGH senzorem,
 Formula: uS / 58 = centimeters
 ```
 Tento proces se neustále opakuje.
+
+## Obrázky zařízení
+
+![Zapojení](https://i.imgur.com/RyWCjG5.jpg)
+![Rozhraní UART](https://i.imgur.com/8rBqZgJ.png)
