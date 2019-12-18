@@ -93,3 +93,5 @@ Tento proces se neustále opakuje.
 
 ![Zapojení](https://i.imgur.com/RyWCjG5.jpg)
 ![Rozhraní UART](https://i.imgur.com/8rBqZgJ.png)
+
+https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
