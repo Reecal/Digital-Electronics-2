@@ -95,4 +95,16 @@ Tento proces se neustále opakuje.
 ![Zapojení](https://i.imgur.com/RyWCjG5.jpg)
 ![Rozhraní UART](https://i.imgur.com/8rBqZgJ.png)
 
-https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
+## Prezentační video
+
+Odkaz na prezentační [video](https://youtu.be/6Z_-g7sVkbQ) zařízení.
+
+## Odkazy
+
+Odkaz na datasheet mikrokontroléru [ATMEGA328P](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf).
+
+Odkaz na datasheet senzoru [HC-SR04](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf) 
+
+## Changes
+
+19.12 Přidáno prezentační video zařízení a přidán soubor Makefile pro kompilaci a nahrání programu do mikrokontroléru.
