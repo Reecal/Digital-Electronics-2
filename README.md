@@ -103,8 +103,12 @@ Odkaz na prezentační [video](https://youtu.be/6Z_-g7sVkbQ) zařízení.
 
 Odkaz na datasheet mikrokontroléru [ATMEGA328P](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf).
 
-Odkaz na datasheet senzoru [HC-SR04](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf) 
+Odkaz na datasheet senzoru [HC-SR04](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf). 
+
+Odkaz na datasheet posuvných registrů [74HC595N](http://www.ti.com/lit/ds/symlink/sn74hc595.pdf).
+
+Odkaz na využitou knihovnu pro komunikaci pomocí rozhraní [UART](http://www.peterfleury.epizy.com/avr-software.html?i=1) od Petera Fleuryho.
 
 ## Changes
 
-19.12 Přidáno prezentační video zařízení a přidán soubor Makefile pro kompilaci a nahrání programu do mikrokontroléru.
+19.12 Přidáno prezentační video zařízení a přidán soubor Makefile pro kompilaci a nahrání programu do mikrokontroléru. Upraveny a přidány některé odkazy na datasheety součástek.
